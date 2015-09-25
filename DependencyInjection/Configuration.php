@@ -33,6 +33,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('port')->defaultValue('80')->end()
                 ->scalarNode('timeout')->defaultValue('30')->end()
                 ->scalarNode('auth_service_id')->defaultNull()->end()
+                ->scalarNode('fireandforget')->defaultValue(false)->end()
             ->end();
 
         return $treeBuilder;
