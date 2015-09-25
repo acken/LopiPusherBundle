@@ -28,6 +28,7 @@ class LopiPusherExtension extends Extension
         $container->setParameter('lopi_pusher.host', $config['host']);
         $container->setParameter('lopi_pusher.port', $config['port']);
         $container->setParameter('lopi_pusher.timeout', $config['timeout']);
+        $container->setParameter('lopi_pusher.fireandforget', $config['fireandforget']);
 
         if (null !== $config['auth_service_id']) {
             $container->setAlias('lopi_pusher.authenticator', $config['auth_service_id']);
