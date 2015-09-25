@@ -27,6 +27,9 @@
         "symfony/dependency-injection": "~2.3",
         "symfony/http-kernel": "~2.3"
     },
+    "repositories": [
+        { "type": "vcs", "url": "git@github.com:acken/pusher-http-php.git" }
+    ],
     "autoload": {
         "psr-0": { "Lopi\\Bundle\\PusherBundle": "" }
     },
